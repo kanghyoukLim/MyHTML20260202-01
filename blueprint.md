@@ -11,7 +11,8 @@ A web application that recommends a food menu based on the selected category (Ko
 2.  **Random Recommendation:** Logic to randomly select one menu item from the chosen category.
 3.  **Recipe Display:** Show the name of the dish and a step-by-step cooking guide.
 4.  **External Search Integration:** Direct links to search for the recipe on Naver and YouTube.
-5.  **Responsive Design:** Ensure the layout works on mobile and desktop.
+5.  **Disqus Comment System Integration**: Users can leave comments on the page.
+6.  **Responsive Design:** Ensure the layout works on mobile and desktop.
 
 **Architecture:**
 *   **HTML:** Structure for buttons and result display area.
