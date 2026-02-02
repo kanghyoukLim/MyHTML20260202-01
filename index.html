@@ -1,14 +1,52 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
+  <title>오늘 뭐 먹지? - 메뉴 추천 및 레시피</title>
   <link href='/style.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+  <div class="container">
+    <header>
+      <h1>오늘 뭐 먹지?</h1>
+      <p>카테고리를 선택하면 메뉴와 레시피를 알려드려요!</p>
+    </header>
+
+    <nav class="category-nav">
+      <button class="category-btn" data-category="korean">한식</button>
+      <button class="category-btn" data-category="chinese">중식</button>
+      <button class="category-btn" data-category="western">양식</button>
+      <button class="category-btn" data-category="snack">분식</button>
+    </nav>
+
+    <main id="result-area" class="result-area hidden">
+      <div class="card">
+        <h2 id="menu-name">메뉴 이름</h2>
+        <div class="recipe-content">
+          <h3>재료</h3>
+          <ul id="ingredients-list">
+            <!-- Ingredients will go here -->
+          </ul>
+          <h3>조리 방법</h3>
+          <ol id="recipe-steps">
+            <!-- Steps will go here -->
+          </ol>
+        </div>
+        
+        <div class="search-links">
+          <h3>더 많은 레시피 보기</h3>
+          <div class="link-buttons">
+            <a id="naver-link" href="#" target="_blank" class="search-btn naver">네이버 검색</a>
+            <a id="youtube-link" href="#" target="_blank" class="search-btn youtube">유튜브 검색</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="/main.js"></script>
 </body>
 </html>
